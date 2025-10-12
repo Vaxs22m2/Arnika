@@ -1,0 +1,117 @@
+.gear-home-btn {
+	margin-top: 32px;
+	padding: 12px 28px;
+	background: linear-gradient(90deg, #1976d2 0%, #6ec1ff 100%);
+	color: #fff;
+	font-size: 1.08rem;
+	font-weight: 700;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 4px 14px rgba(25, 118, 210, 0.13);
+	cursor: pointer;
+	transition: background 0.2s, transform 0.15s;
+	letter-spacing: 0.2px;
+}
+.gear-home-btn:hover {
+	background: linear-gradient(90deg, #1565c0 0%, #4fc3f7 100%);
+	transform: translateY(-2px) scale(1.03);
+}
+/* Beautiful styles for the gear page */
+.gear-section {
+	background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+	min-height: 100vh;
+	padding: 60px 0 80px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gear-container {
+	background: #fff;
+	border-radius: 22px;
+	box-shadow: 0 8px 32px rgba(80, 120, 180, 0.13);
+	max-width: 540px;
+	width: 100%;
+	padding: 40px 32px 32px 32px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gear-title {
+	font-size: 2.3rem;
+	font-weight: 900;
+	color: #0a2a5a;
+	margin-bottom: 18px;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
+.gear-intro {
+	font-size: 1.15rem;
+	color: #3a4a6a;
+	margin-bottom: 28px;
+	text-align: center;
+}
+
+.gear-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 28px 0;
+	width: 100%;
+}
+.gear-list li {
+	font-size: 1.08rem;
+	background: #f7f9fc;
+	margin-bottom: 12px;
+	padding: 12px 18px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(80, 120, 180, 0.07);
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #0a2a5a;
+	font-weight: 500;
+	transition: background 0.2s;
+}
+.gear-list li:hover {
+	background: #e0eafc;
+}
+
+.gear-note {
+	font-size: 1rem;
+	color: #1976d2;
+	text-align: center;
+	margin-top: 10px;
+	font-style: italic;
+}
+/* app/essential-gear-caucasus/gear.css */
+:root { --page-max: 1100px; }
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.gear-page { background: #030202; color: #0f172a; line-height: 1.6; }
+
+.container { max-width: var(--page-max); margin: 0 auto; padding: 0 1rem; }
+
+.hero { background: #f8fafc; border-bottom: 1px solid #e5e7eb; }
+.hero .container { padding: 3rem 1rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; color: #64748b; }
+.hero h1 { margin: .25rem 0 0; font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1.2; }
+.lede { color: #334155; max-width: 60ch; margin-top: .75rem; }
+
+.section { padding: 2.5rem 0 3rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+
+.card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 1rem; background: #fff; }
+.card h2 { margin: .25rem 0 .25rem; font-size: 1.05rem; }
+.card ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+.card li { margin: .25rem 0; }
+
+.tips { margin-top: 1rem; }
+.tips h3 { margin: 0 0 .25rem; font-size: 1rem; }
+.tips ul { padding-left: 1.1rem; }

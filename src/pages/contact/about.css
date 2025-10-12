@@ -1,0 +1,103 @@
+/* container */
+.guides-wrap {
+  padding: 16px clamp(12px, 4vw, 24px);
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(14px, 2vw, 24px);
+}
+
+/* 3 cards per row on desktop, 2 on tablet, 1 on mobile */
+.guide-card {
+  grid-column: span 4;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  min-height: clamp(200px, 26vw, 300px);
+  background: #eef2f6; /* fallback before image loads */
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+@media (max-width: 1024px) {
+  .guide-card { grid-column: span 6; }
+}
+@media (max-width: 640px) {
+  .guide-card { grid-column: span 12; }
+}
+
+/* image fill */
+.guide-media {
+  position: absolute;
+  inset: 0;
+}
+.guide-img {
+  object-fit: cover;
+}
+
+/* name label (white, large, bottom-left) */
+.guide-name {
+  position: absolute;
+  left: clamp(14px, 2vw, 22px);
+  bottom: clamp(14px, 2vw, 22px);
+  font-weight: 800;
+  letter-spacing: .5px;
+  font-size: clamp(22px, 3.2vw, 42px);
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,.35);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* info panel overlay (hidden by default) */
+.guide-info {
+  position: absolute;
+  inset: clamp(10px, 2vw, 18px);
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(2px);
+  color: #1b2838;
+  border-radius: 14px;
+  padding: clamp(14px, 2.2vw, 20px);
+  display: grid;
+  align-content: start;
+  gap: 10px;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .22s ease, transform .22s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.guide-info h3 {
+  margin: 0;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #233754;
+}
+.guide-info p {
+  margin: 0;
+  font-size: clamp(14px, 1.6vw, 16px);
+  line-height: 1.55;
+  color: #374c69;
+}
+
+/* show panel on hover/focus (desktop + keyboard) */
+.guide-card:hover .guide-info,
+.guide-card:focus-visible .guide-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* touch: tap once to show, again to hide (no JS) */
+@media (hover: none) and (pointer: coarse) {
+  .guide-card:focus .guide-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* nice rounded corners on images in Safari too */
+.guide-card, .guide-media, .guide-img { border-radius: 16px; }

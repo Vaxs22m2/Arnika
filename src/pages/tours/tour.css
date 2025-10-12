@@ -1,0 +1,279 @@
+/* ====== Base layout ====== */
+.tour-main {
+    background: #0066ff;
+    /* your canvas */
+    padding: 16px clamp(12px, 4vw, 24px);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tour-container {
+    width: 100%;
+    max-width: min(1200px, 92vw);
+    margin: 0 auto;
+}
+
+/* ====== Page header ====== */
+.page-head {
+    margin-bottom: clamp(10px, 2vw, 16px);
+}
+
+.title {
+    margin: 0 0 8px;
+    color: #053474;
+    font-size: clamp(22px, 3.2vw, 36px);
+    line-height: 1.15;
+    font-weight: 900;
+    letter-spacing: .2px;
+    word-break: break-word;
+}
+
+.accent-bar {
+    display: inline-block;
+    height: 4px;
+    width: clamp(64px, 10vw, 96px);
+    background: #053474;
+    border-radius: 6px;
+}
+
+/* ====== Card ====== */
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .08);
+    padding: clamp(16px, 2.4vw, 24px);
+}
+
+/* ====== Tour hero + content ====== */
+.tour-card {
+    display: grid;
+    gap: clamp(14px, 2vw, 20px);
+}
+
+.tour-hero {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #e9eef3;
+    aspect-ratio: 16 / 9;
+    /* responsive height */
+    box-shadow: 0 10px 28px rgba(0, 0, 0, .10);
+    isolation: isolate;
+    /* crisper for overlay/shadows on mobile */
+}
+
+.hero-img {
+    object-fit: cover;
+}
+
+.tour-content {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .06);
+    padding: clamp(16px, 2.4vw, 22px);
+}
+
+/* Body copy */
+.lead {
+    margin: 0;
+    color: #2d3d57;
+    line-height: clamp(1.5, 1.2 + .3vw, 1.7);
+    font-size: clamp(15px, 1.8vw, 18px);
+}
+
+/* ====== Actions (buttons) ====== */
+.actions {
+    display: flex;
+    gap: clamp(8px, 1.6vw, 12px);
+    flex-wrap: wrap;
+    margin-top: clamp(12px, 2vw, 16px);
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: clamp(11px, 1.3vw, 12px) clamp(14px, 2vw, 16px);
+    font-weight: 850;
+    letter-spacing: .35px;
+    transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease, color .12s ease;
+    will-change: transform;
+    outline: none;
+    white-space: nowrap;
+}
+
+.btn:focus-visible {
+    outline: 3px solid #98c1ff;
+    outline-offset: 2px;
+}
+
+.btn-primary {
+    background: #053474;
+    color: #ffffff;
+    box-shadow: 0 6px 16px rgba(5, 52, 116, .28);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(5, 52, 116, .34);
+}
+
+.btn-outline {
+    background: #ffffff;
+    color: #053474;
+    border: 2px solid #053474;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+}
+
+.btn-outline:hover {
+    background: #053474;
+    color: #ffffff;
+}
+
+/* ====== Muted helper ====== */
+.muted {
+    color: #6b7a90;
+}
+
+/* ====== Skeleton (loading) ====== */
+.skeleton-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .06);
+}
+
+.skeleton-bar {
+    height: 22px;
+    width: 240px;
+    background: linear-gradient(90deg, #eef2f7, #f7f9fc, #eef2f7);
+    border-radius: 6px;
+    animation: sh 1.2s infinite;
+}
+
+.skeleton-media {
+    height: clamp(220px, 50vw, 420px);
+    margin-top: 12px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #eef2f7, #f7f9fc, #eef2f7);
+    animation: sh 1.2s infinite;
+}
+
+.skeleton-text {
+    height: 14px;
+    width: 70%;
+    margin-top: 12px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #eef2f7, #f7f9fc, #eef2f7);
+    animation: sh 1.2s infinite;
+}
+
+@keyframes sh {
+    0% {
+        background-position: 0% 50%
+    }
+
+    100% {
+        background-position: 100% 50%
+    }
+}
+
+/* ====== Responsive: grid & typography ====== */
+
+/* large desktops: widen container a bit */
+@media (min-width: 1280px) {
+    .tour-container {
+        max-width: 1240px;
+    }
+}
+
+/* split layout on wider screens */
+@media (min-width: 860px) {
+    .tour-card {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .tour-content {
+        height: 100%;
+    }
+}
+
+/* tablets: comfy spacing, bigger hero */
+@media (max-width: 859.98px) {
+    .tour-main {
+        padding-bottom: max(16px, env(safe-area-inset-bottom));
+    }
+
+    .tour-hero {
+        aspect-ratio: 4 / 3;
+    }
+
+    .actions {
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 0.70rem;
+    }
+}
+
+/* phones: full-width buttons, tighter grid */
+@media (max-width: 640px) {
+    .tour-container {
+        max-width: 96vw;
+    }
+
+    .tour-card {
+        gap: 12px;
+    }
+
+    .tour-hero {
+        border-radius: 12px;
+    }
+
+    .tour-content {
+        border-radius: 12px;
+        padding: 14px;
+    }
+
+    .title {
+        font-size: clamp(22px, 6vw, 28px);
+    }
+
+    .lead {
+        font-size: clamp(15px, 4.2vw, 17px);
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* very small phones */
+@media (max-width: 380px) {
+    .tour-hero {
+        aspect-ratio: 3 / 2;
+    }
+
+    .accent-bar {
+        width: 56px;
+    }
+}
+
+/* ====== Motion & accessibility ====== */
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none !important;
+    }
+
+    .skeleton-bar,
+    .skeleton-media,
+    .skeleton-text {
+        animation: none !important;
+    }
+}
