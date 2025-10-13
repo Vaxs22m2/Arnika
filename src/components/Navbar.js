@@ -198,10 +198,10 @@ export default function Navbar() {
                   Winter Tours ▸
                 </span>
                 <ul id="sub-winter" className="sub-dropdown" role="menu" aria-label="Winter Tours">
-                  <li><Link href="/tours/ski-snowboard-lessons-gudauri" onClick={handleNavLink}>Ski & Snowboard Lessons in Gudauri</Link></li>
-                  <li><Link href="/tours/one-day-ski-tour-gudauri" onClick={handleNavLink}>One Day Ski Tour in Gudauri</Link></li>
-                  <li><Link href="/tours/transfers-gudauri-from-tbilisi" onClick={handleNavLink}>Transfers to Gudauri from Tbilisi</Link></li>
-                  <li><Link href="/tours/winter-hike-borjomi" onClick={handleNavLink}>Winter Hike in Borjomi : Snowshoeing</Link></li>
+                  <li><Link href="/tours/Ski Tour in Svaneti — 8 Days" onClick={handleNavLink}>Ski Tour in Svaneti - 8 Days</Link></li>
+                  <li><Link href="/tours/Luxury Ski & Spa Experience in Goderdzi — 8 Days" onClick={handleNavLink}>Luxury Ski & Spa Experience in Goderdzi — 8 Days</Link></li>
+                  <li><Link href="/tours/Ski Adventure in Gudauri — 8 Days" onClick={handleNavLink}>Ski Adventure in Gudauri — 8 Days</Link></li>
+                  <li><Link href="/tours/Ski & Culture Adventure in Georgia — 10 Days" onClick={handleNavLink}>Ski & Culture Adventure in Georgia — 10 Days</Link></li>
                   <li><Link href="/tours/snowshoe-hike-kazbegi" onClick={handleNavLink}>Snowshoe Hike in Kazbegi : Snowshoeing</Link></li>
                   <li><Link href="/tours/3-day-winter-tour-georgia" onClick={handleNavLink}>3 Day Winter Tour in Georgia</Link></li>
                   <li><Link href="/tours/ski-touring-gudauri-kazbegi" onClick={handleNavLink}>Ski Touring in Gudauri & Kazbegi</Link></li>
