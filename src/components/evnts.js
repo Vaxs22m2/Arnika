@@ -12,6 +12,14 @@ const DEFAULT_ITEMS = [
       'https://chimerical-narwhal-a4a3e8.netlify.app/jojo%20sucks/www.trekgeorgia.com/index_files/PXL_20240119_1300431313-400x300.webp',
     href: '/tours/3-day-winter-tour-georgia',
   },
+
+    {
+    title: 'Svaneti',
+    subtitle: 'Medieval towers & mountain villages',
+    image:
+      'https://glistening-khapse-bb8fd7.netlify.app/jojo%20sucks/www.trekgeorgia.com/index_files/PXL_20230812_0743142094-400x300.webp',
+    href: '/tours/5-day-hiking-svaneti',
+  },
   {
     title: 'Tusheti',
     subtitle: 'Remote roads & horse trails',
@@ -19,13 +27,7 @@ const DEFAULT_ITEMS = [
       'https://fantastic-jelly-f08e64.netlify.app/www.trekgeorgia.com/index_files/IMG-20220826-WA0038-400x300.webp',
     href: '/tours/trekking-tusheti',
   },
-  {
-    title: 'Svaneti',
-    subtitle: 'Medieval towers & mountain villages',
-    image:
-      'https://glistening-khapse-bb8fd7.netlify.app/jojo%20sucks/www.trekgeorgia.com/index_files/PXL_20230812_0743142094-400x300.webp',
-    href: '/tours/5-day-hiking-svaneti',
-  },
+
   {
     title: 'Kazbegi',
     subtitle: 'Gergeti, gorges & valleys',

@@ -61,14 +61,14 @@ export default function Navbar() {
     <nav className="navbar" ref={navRef}>
       <div className="inner">
         {/* Left: Logo */}
-        <div className="brand">
+        <a href={'/'} className="brand">
           <img src="/logo.jpeg" alt="Arnika Travel Logo" />
           Arnika Travel
-        </div>
+        </a>
 
         {/* Center: Menu */}
         <ul className={`menu ${isOpen ? 'open' : ''}`} role="menubar" aria-label="Main">
-          <li><Link href="/" onClick={handleNavLink}>Home</Link></li>
+          <li><a href="/" onClick={handleNavLink}>Home</a></li>
 
           {/* Tours in Georgia (click to open) */}
           <li className={`has-dropdown ${openMain ? 'open' : ''}`}>
@@ -105,14 +105,14 @@ export default function Navbar() {
                   Cultural Tours ▸
                 </span>
                 <ul id="sub-cultural" className="sub-dropdown" role="menu" aria-label="Cultural Tours">
-                  <li><Link href="/tours/tbilisi-walking-tour" onClick={handleNavLink}>Tbilisi Walking Tour</Link></li>
-                  <li><Link href="/tours/kazbegi-tour-from-tbilisi" onClick={handleNavLink}>Kazbegi Tour from Tbilisi</Link></li>
-                  <li><Link href="/tours/wine-tasting-tour-kakheti" onClick={handleNavLink}>Wine Tasting Tour in Kakheti</Link></li>
-                  <li><Link href="/tours/mtskheta-gori-uplistsikhe-tour" onClick={handleNavLink}>Mtskheta, Gori & Uplistsikhe Tour</Link></li>
-                  <li><Link href="/tours/david-gareja-signagi-tour" onClick={handleNavLink}>David Gareja & Signagi Tour</Link></li>
-                  <li><Link href="/tours/best-of-georgia-8-day-tour" onClick={handleNavLink}>BEST OF GEORGIA – 8 DAY TOUR IN GEORGIA</Link></li>
-                  <li><Link href="/tours/around-georgia-14-days-tour" onClick={handleNavLink}>AROUND GEORGIA – 14 DAYS TOUR IN GEORGIA</Link></li>
-                  <li><Link href="/tours/caucasus-tour-azerbaijan-armenia-georgia" onClick={handleNavLink}>Caucasus Tour : Azerbaijan, Armenia, and Georgia</Link></li>
+                  <li><a href="/tours/tbilisi-walking-tour" onClick={handleNavLink}>Tbilisi Walking Tour</a></li>
+                  <li><a href="/tours/kazbegi-tour-from-tbilisi" onClick={handleNavLink}>Kazbegi Tour from Tbilisi</a></li>
+                  <li><a href="/tours/wine-tasting-tour-kakheti" onClick={handleNavLink}>Wine Tasting Tour in Kakheti</a></li>
+                  <li><a href="/tours/mtskheta-gori-uplistsikhe-tour" onClick={handleNavLink}>Mtskheta, Gori & Uplistsikhe Tour</a></li>
+                  <li><a href="/tours/david-gareja-signagi-tour" onClick={handleNavLink}>David Gareja & Signagi Tour</a></li>
+                  <li><a href="/tours/best-of-georgia-8-day-tour" onClick={handleNavLink}>BEST OF GEORGIA – 8 DAY TOUR IN GEORGIA</a></li>
+                  <li><a href="/tours/around-georgia-14-days-tour" onClick={handleNavLink}>AROUND GEORGIA – 14 DAYS TOUR IN GEORGIA</a></li>
+                  <li><a href="/tours/caucasus-tour-azerbaijan-armenia-georgia" onClick={handleNavLink}>Caucasus Tour : Azerbaijan, Armenia, and Georgia</a></li>
                 </ul>
               </li>
 
@@ -130,14 +130,14 @@ export default function Navbar() {
                   Hiking Tours ▸
                 </span>
                 <ul id="sub-hiking" className="sub-dropdown" role="menu" aria-label="Hiking Tours">
-                  <li><Link href="/tours/off-season-hiking-georgia" onClick={handleNavLink}>Off-Season Hiking in Georgia | TrekGeorgia</Link></li>
-                  <li><Link href="/tours/2-day-hike-borjomi-kharagauli" onClick={handleNavLink}>2 Day Hike in Borjomi-Kharagauli National Park</Link></li>
-                  <li><Link href="/tours/2-day-hike-kazbegi" onClick={handleNavLink}>2 Day Hike in Kazbegi</Link></li>
-                  <li><Link href="/tours/hike-juta-roshka" onClick={handleNavLink}>Hike from Juta to Roshka</Link></li>
-                  <li><Link href="/tours/3-day-hike-black-rock-lakes" onClick={handleNavLink}>3 Day Hike to Black Rock Lakes</Link></li>
-                  <li><Link href="/tours/3-day-hiking-private-kazbegi" onClick={handleNavLink}>3 Day Hiking Private Tour in Kazbegi</Link></li>
-                  <li><Link href="/tours/3-day-tour-vashlovani" onClick={handleNavLink}>3 Day Tour to Vashlovani National Park</Link></li>
-                  <li><Link href="/tours/5-day-hiking-svaneti" onClick={handleNavLink}>5 Day Hiking in Svaneti</Link></li>
+                  <li><a href="/tours/off-season-hiking-georgia" onClick={handleNavLink}>Off-Season Hiking in Georgia | TrekGeorgia</a></li>
+                  <li><a href="/tours/2-day-hike-borjomi-kharagauli" onClick={handleNavLink}>2 Day Hike in Borjomi-Kharagauli National Park</a></li>
+                  <li><a href="/tours/2-day-hike-kazbegi" onClick={handleNavLink}>2 Day Hike in Kazbegi</a></li>
+                  <li><a href="/tours/hike-juta-roshka" onClick={handleNavLink}>Hike from Juta to Roshka</a></li>
+                  <li><a href="/tours/3-day-hike-black-rock-lakes" onClick={handleNavLink}>3 Day Hike to Black Rock Lakes</a></li>
+                  <li><a href="/tours/3-day-hiking-private-kazbegi" onClick={handleNavLink}>3 Day Hiking Private Tour in Kazbegi</a></li>
+                  <li><a href="/tours/3-day-tour-vashlovani" onClick={handleNavLink}>3 Day Tour to Vashlovani National Park</a></li>
+                  <li><a href="/tours/5-day-hiking-svaneti" onClick={handleNavLink}>5 Day Hiking in Svaneti</a></li>
                 </ul>
               </li>
 
@@ -155,12 +155,12 @@ export default function Navbar() {
                   Trekking Tours ▸
                 </span>
                 <ul id="sub-trekking" className="sub-dropdown" role="menu" aria-label="Trekking Tours">
-                  <li><Link href="/tours/trek-kelitsadi-lake" onClick={handleNavLink}>Trek to Kelitsadi Lake</Link></li>
-                  <li><Link href="/tours/6-day-trekking-racha" onClick={handleNavLink}>6 Day Trekking in Racha</Link></li>
-                  <li><Link href="/tours/mestia-ushguli-trekking" onClick={handleNavLink}>Mestia Ushguli Trekking Tour</Link></li>
-                  <li><Link href="/tours/omalo-shatili-trekking" onClick={handleNavLink}>Omalo Shatili Trekking Tour</Link></li>
-                  <li><Link href="/tours/7-day-trekking-tobavarchkhili-lakes" onClick={handleNavLink}>7 DAY TREKKING TO TOBAVARCHKHILI LAKES</Link></li>
-                  <li><Link href="/tours/trekking-tusheti" onClick={handleNavLink}>Trekking in Tusheti</Link></li>
+                  <li><a href="/tours/trek-kelitsadi-lake" onClick={handleNavLink}>Trek to Kelitsadi Lake</a></li>
+                  <li><a href="/tours/6-day-trekking-racha" onClick={handleNavLink}>6 Day Trekking in Racha</a></li>
+                  <li><a href="/tours/mestia-ushguli-trekking" onClick={handleNavLink}>Mestia Ushguli Trekking Tour</a></li>
+                  <li><a href="/tours/omalo-shatili-trekking" onClick={handleNavLink}>Omalo Shatili Trekking Tour</a></li>
+                  <li><a href="/tours/7-day-trekking-tobavarchkhili-lakes" onClick={handleNavLink}>7 DAY TREKKING TO TOBAVARCHKHILI LAKES</a></li>
+                  <li><a href="/tours/trekking-tusheti" onClick={handleNavLink}>Trekking in Tusheti</a></li>
                 </ul>
               </li>
 
@@ -178,9 +178,9 @@ export default function Navbar() {
                   Trekking Group Tours ▸
                 </span>
                 <ul id="sub-group" className="sub-dropdown" role="menu" aria-label="Trekking Group Tours">
-                  <li><Link href="/tours/3-day-hiking-group-kazbegi" onClick={handleNavLink}>3 Day Hiking Group Tour in Kazbegi</Link></li>
-                  <li><Link href="/tours/8-day-trekking-group-svaneti" onClick={handleNavLink}>8 Day Trekking Group Tour in Svaneti</Link></li>
-                  <li><Link href="/tours/trekking-tusheti-khevsureti" onClick={handleNavLink}>Trekking from Tusheti to Khevsureti</Link></li>
+                  <li><a href="/tours/3-day-hiking-group-kazbegi" onClick={handleNavLink}>3 Day Hiking Group Tour in Kazbegi</a></li>
+                  <li><a href="/tours/8-day-trekking-group-svaneti" onClick={handleNavLink}>8 Day Trekking Group Tour in Svaneti</a></li>
+                  <li><a href="/tours/trekking-tusheti-khevsureti" onClick={handleNavLink}>Trekking from Tusheti to Khevsureti</a></li>
                 </ul>
               </li>
 
@@ -198,14 +198,14 @@ export default function Navbar() {
                   Winter Tours ▸
                 </span>
                 <ul id="sub-winter" className="sub-dropdown" role="menu" aria-label="Winter Tours">
-                  <li><Link href="/tours/Ski Tour in Svaneti — 8 Days" onClick={handleNavLink}>Ski Tour in Svaneti - 8 Days</Link></li>
-                  <li><Link href="/tours/Luxury Ski & Spa Experience in Goderdzi — 8 Days" onClick={handleNavLink}>Luxury Ski & Spa Experience in Goderdzi — 8 Days</Link></li>
-                  <li><Link href="/tours/Ski Adventure in Gudauri — 8 Days" onClick={handleNavLink}>Ski Adventure in Gudauri — 8 Days</Link></li>
-                  <li><Link href="/tours/Ski & Culture Adventure in Georgia — 10 Days" onClick={handleNavLink}>Ski & Culture Adventure in Georgia — 10 Days</Link></li>
-                  <li><Link href="/tours/snowshoe-hike-kazbegi" onClick={handleNavLink}>Snowshoe Hike in Kazbegi : Snowshoeing</Link></li>
-                  <li><Link href="/tours/3-day-winter-tour-georgia" onClick={handleNavLink}>3 Day Winter Tour in Georgia</Link></li>
-                  <li><Link href="/tours/ski-touring-gudauri-kazbegi" onClick={handleNavLink}>Ski Touring in Gudauri & Kazbegi</Link></li>
-                  <li><Link href="/tours/ski-touring-svaneti" onClick={handleNavLink}>Ski Touring in Svaneti</Link></li>
+                  <li><a href="/tours/Ski Tour in Svaneti — 8 Days" onClick={handleNavLink}>Ski Tour in Svaneti - 8 Days</a></li>
+                  <li><a href="/tours/Luxury Ski & Spa Experience in Goderdzi — 8 Days" onClick={handleNavLink}>Luxury Ski & Spa Experience in Goderdzi — 8 Days</a></li>
+                  <li><a href="/tours/Ski Adventure in Gudauri — 8 Days" onClick={handleNavLink}>Ski Adventure in Gudauri — 8 Days</a></li>
+                  <li><a href="/tours/Ski & Culture Adventure in Georgia — 10 Days" onClick={handleNavLink}>Ski & Culture Adventure in Georgia — 10 Days</a></li>
+                  <li><a href="/tours/snowshoe-hike-kazbegi" onClick={handleNavLink}>Snowshoe Hike in Kazbegi : Snowshoeing</a></li>
+                  <li><a href="/tours/3-day-winter-tour-georgia" onClick={handleNavLink}>3 Day Winter Tour in Georgia</a></li>
+                  <li><a href="/tours/ski-touring-gudauri-kazbegi" onClick={handleNavLink}>Ski Touring in Gudauri & Kazbegi</a></li>
+                  <li><a href="/tours/ski-touring-svaneti" onClick={handleNavLink}>Ski Touring in Svaneti</a></li>
                 </ul>
               </li>
 
@@ -223,17 +223,17 @@ export default function Navbar() {
                   Horse Riding Tours ▸
                 </span>
                 <ul id="sub-horse" className="sub-dropdown" role="menu" aria-label="Horse Riding Tours">
-                  <li><Link href="/tours/horse-riding-borjomi" onClick={handleNavLink}>Horse Riding in Borjomi</Link></li>
-                  <li><Link href="/tours/horse-riding-kazbegi" onClick={handleNavLink}>Horse Riding in Kazbegi</Link></li>
-                  <li><Link href="/tours/7-day-horse-riding-tour" onClick={handleNavLink}>7 Day Horse Riding Tour in</Link></li>
-                  <li><Link href="/tours/horse-riding-tusheti" onClick={handleNavLink}>Tusheti</Link></li>
+                  <li><a href="/tours/horse-riding-borjomi" onClick={handleNavLink}>Horse Riding in Borjomi</a></li>
+                  <li><a href="/tours/horse-riding-kazbegi" onClick={handleNavLink}>Horse Riding in Kazbegi</a></li>
+                  <li><a href="/tours/7-day-horse-riding-tour" onClick={handleNavLink}>7 Day Horse Riding Tour in</a></li>
+                  <li><a href="/tours/horse-riding-tusheti" onClick={handleNavLink}>Tusheti</a></li>
                 </ul>
               </li>
             </ul>
           </li>
 
           {/* ✅ Destinations stays exactly here */}
-          <li><Link href="/destination" onClick={handleNavLink}>Destinations</Link></li>
+          <li><a href="/destination" onClick={handleNavLink}>Destinations</a></li>
 
           {/* About us (click to open) */}
           <li className={`has-dropdown ${openAbout ? 'open' : ''}`}>
@@ -257,12 +257,12 @@ export default function Navbar() {
               About us <span className="caret" aria-hidden="true" />
             </span>
             <ul id="about-dd" className="dropdown" role="menu" aria-label="About us">
-              <li><Link href="/contact/Aboutus" onClick={handleNavLink}>Guides</Link></li>
+              <li><a href="/contact/Aboutus" onClick={handleNavLink}>Guides</a></li>
             </ul>
           </li>
 
           {/* Contact */}
-          <li><Link href="/contact" onClick={handleNavLink}>Contact</Link></li>
+          <li><a href="/contact" onClick={handleNavLink}>Contact</a></li>
         </ul>
 
         {/* Right: Contact pill */}

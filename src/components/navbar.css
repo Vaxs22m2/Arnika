@@ -1,4 +1,6 @@
-/* navbar — pinned on top */
+*{
+    text-decoration: none;
+}
 .navbar {
     background: #053474;
     color: #eaf4ff;
@@ -23,6 +25,7 @@
 /* logo */
 .brand {
     display: flex;
+    color: white;
     align-items: center;
     gap: 12px;
     flex: 0 0 auto;
