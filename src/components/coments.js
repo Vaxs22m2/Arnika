@@ -61,7 +61,7 @@ export default function ReviewsAndFooter({ reviews = DEFAULT_REVIEWS }) {
     <>
       <Head>
         {/* Beautiful fonts */}
-        <link
+        <a
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500;600&display=swap"
           rel="stylesheet"
         />

@@ -26,7 +26,7 @@ const DEFAULT_POSTS = [
       'Discover Georgia’s best ski destinations and find the resort that matches your style of adventure.',
     image:
       'https://fantastic-jelly-f08e64.netlify.app/www.trekgeorgia.com/index_files/PXL_20230221_1215544644-400x300.webp',
-    href: '/contact'
+      href: '/tours/Top-ski-resorts'
   }
 ];
 

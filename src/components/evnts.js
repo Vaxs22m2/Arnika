@@ -18,14 +18,14 @@ const DEFAULT_ITEMS = [
     subtitle: 'Medieval towers & mountain villages',
     image:
       'https://glistening-khapse-bb8fd7.netlify.app/jojo%20sucks/www.trekgeorgia.com/index_files/PXL_20230812_0743142094-400x300.webp',
-    href: '/tours/5-day-hiking-svaneti',
+    href: '/tours/Svaneti, Georgia',
   },
   {
     title: 'Tusheti',
     subtitle: 'Remote roads & horse trails',
     image:
       'https://fantastic-jelly-f08e64.netlify.app/www.trekgeorgia.com/index_files/IMG-20220826-WA0038-400x300.webp',
-    href: '/tours/trekking-tusheti',
+    href: 'tours/3-Day Jeep Adventure in Tusheti, Georgia',
   },
 
   {
@@ -50,7 +50,7 @@ export default function Highlights({ items = DEFAULT_ITEMS, actions }) {
           {items.map((item, i) => (
             <li key={i} className="hl-card">
               {/* media link (image + caption) */}
-              <Link
+              <a
                 className="hl-media"
                 href={item.href || '#'}
                 aria-label={`Open ${item.title}`}
@@ -66,13 +66,13 @@ export default function Highlights({ items = DEFAULT_ITEMS, actions }) {
                   <h3>{item.title}</h3>
                   {item.subtitle ? <p>{item.subtitle}</p> : null}
                 </div>
-              </Link>
+              </a>
 
-              {/* separate action link (not nested) */}
+              {/* separate action a (not nested) */}
               <div className="hl-meta">
-                <Link className="hl-btn" href={item.href || '#'}>
+                <a className="hl-btn" href={item.href || '#'}>
                   View all
-                </Link>
+                </a>
               </div>
             </li>
           ))}

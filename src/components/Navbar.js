@@ -102,17 +102,14 @@ export default function Navbar() {
                   onClick={toggleWithKeys(() => setOpenSub(s => s === 'cultural' ? null : 'cultural'))}
                   onKeyDown={toggleWithKeys(() => setOpenSub(s => s === 'cultural' ? null : 'cultural'))}
                 >
-                  Cultural Tours ▸
+                  Explore Georgia ▸
                 </span>
                 <ul id="sub-cultural" className="sub-dropdown" role="menu" aria-label="Cultural Tours">
-                  <li><a href="/tours/tbilisi-walking-tour" onClick={handleNavLink}>Tbilisi Walking Tour</a></li>
-                  <li><a href="/tours/kazbegi-tour-from-tbilisi" onClick={handleNavLink}>Kazbegi Tour from Tbilisi</a></li>
-                  <li><a href="/tours/wine-tasting-tour-kakheti" onClick={handleNavLink}>Wine Tasting Tour in Kakheti</a></li>
-                  <li><a href="/tours/mtskheta-gori-uplistsikhe-tour" onClick={handleNavLink}>Mtskheta, Gori & Uplistsikhe Tour</a></li>
-                  <li><a href="/tours/david-gareja-signagi-tour" onClick={handleNavLink}>David Gareja & Signagi Tour</a></li>
-                  <li><a href="/tours/best-of-georgia-8-day-tour" onClick={handleNavLink}>BEST OF GEORGIA – 8 DAY TOUR IN GEORGIA</a></li>
-                  <li><a href="/tours/around-georgia-14-days-tour" onClick={handleNavLink}>AROUND GEORGIA – 14 DAYS TOUR IN GEORGIA</a></li>
-                  <li><a href="/tours/caucasus-tour-azerbaijan-armenia-georgia" onClick={handleNavLink}>Caucasus Tour : Azerbaijan, Armenia, and Georgia</a></li>
+                  <li><a href="/tours/Flavors of Georgia — Wine & Culture Tour 5 Days" onClick={handleNavLink}>Flavors of Georgia Wine Culture Tour 5 Days</a></li>
+                  <li><a href="/tours/Mountain Legends Kazbegi Svaneti Expedition 10 Days" onClick={handleNavLink}>Mountain Legends Kazbegi Svaneti Expedition 10 Days</a></li>
+                  <li><a href="/tours/Hidden Georgia — Canyons, Caves & Waterfalls (7 Days)" onClick={handleNavLink}>Hidden Georgia Canyons, Caves & Waterfalls 7 Days</a></li>
+                  <li><a href="/tours/Ancient Kingdoms — Historical Georgia Discovery (8 Days)" onClick={handleNavLink}>Ancient Kingdoms Historical Georgia Discovery 8 Days</a></li>
+                  <li><a href="/tours/Georgia Grand Circle — From Mountains to the Sea (14 Days)" onClick={handleNavLink}>Georgia Grand Circle — From Mountains to the Sea (14 Days)</a></li>
                 </ul>
               </li>
 
@@ -155,12 +152,12 @@ export default function Navbar() {
                   Trekking Tours ▸
                 </span>
                 <ul id="sub-trekking" className="sub-dropdown" role="menu" aria-label="Trekking Tours">
-                  <li><a href="/tours/trek-kelitsadi-lake" onClick={handleNavLink}>Trek to Kelitsadi Lake</a></li>
-                  <li><a href="/tours/6-day-trekking-racha" onClick={handleNavLink}>6 Day Trekking in Racha</a></li>
-                  <li><a href="/tours/mestia-ushguli-trekking" onClick={handleNavLink}>Mestia Ushguli Trekking Tour</a></li>
-                  <li><a href="/tours/omalo-shatili-trekking" onClick={handleNavLink}>Omalo Shatili Trekking Tour</a></li>
+                  <li><a href="/tours/5-Day Trekking Tour Overview" onClick={handleNavLink}>5-Day Trekking Tour Overview</a></li>
+                  <li><a href="/tours/7-Day Trekking Tour Overview" onClick={handleNavLink}>7-Day Trekking Tour Overview</a></li>
+                  <li><a href="/tours/5-Day Trekking Tour — “Peaks & Valleys of Svaneti”" onClick={handleNavLink}>5-Day Trekking Tour — “Peaks & Valleys of Svaneti”</a></li>
+                  <li><a href="/tours/3-Day Jeep Adventure in Tusheti, Georgia" onClick={handleNavLink}>3-Day Jeep Adventure in Tusheti Georgia</a></li>
                   <li><a href="/tours/7-day-trekking-tobavarchkhili-lakes" onClick={handleNavLink}>7 DAY TREKKING TO TOBAVARCHKHILI LAKES</a></li>
-                  <li><a href="/tours/trekking-tusheti" onClick={handleNavLink}>Trekking in Tusheti</a></li>
+                  <li><a href="/tours/3-Day Jeep Adventure in Tusheti, Georgia" onClick={handleNavLink}>Trekking in Tusheti</a></li>
                 </ul>
               </li>
 
@@ -258,6 +255,7 @@ export default function Navbar() {
             </span>
             <ul id="about-dd" className="dropdown" role="menu" aria-label="About us">
               <li><a href="/contact/Aboutus" onClick={handleNavLink}>Guides</a></li>
+              <li><a href="/tours/About" onClick={handleNavLink}>About Us</a></li>
             </ul>
           </li>
 

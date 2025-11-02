@@ -11,7 +11,7 @@ const DEFAULT_SLIDES = [
     alt: 'Mountain sunrise',
     title: 'Explore Georgia',
     subtitle: 'Caucasus peaks, ancient towns, and warm hospitality.',
-    cta: { label: 'View Tours', href: '#' },
+    cta: { label: 'View Tours', href: '/destination' },
   },
   {
     src: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop',
@@ -25,7 +25,7 @@ const DEFAULT_SLIDES = [
     alt: 'Vineyards at sunset',
     title: 'Taste Kakheti',
     subtitle: 'Wine routes & authentic cellars.',
-    cta: { label: 'Wine Tours', href: '#' },
+    cta: { label: 'Wine Tours', href: '/destination' },
   },
 ];
 
